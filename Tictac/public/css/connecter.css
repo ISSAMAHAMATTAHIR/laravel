@@ -1,0 +1,114 @@
+*
+{
+ margin: 0;
+ padding: 0;
+ box-sizing: border-box;
+ font-family: Dyuthi;
+
+}
+body
+{
+display: flex;
+justify-content: center;
+align-items: center;
+min-height: 100vh;
+background-color: rgb(255, 255, 255);
+}
+.box
+{
+position: relative;
+width: 380px;
+height: 420px;
+background-color: gray;
+}
+.box form
+{
+    position: absolute;
+    inset: 5px;
+    background-color: purple;
+    padding: 50px 40px;
+    border-radius: 4px;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+}
+.box form h2
+{
+    color: rgb(255, 255, 255);
+    font-weight: 100;
+    text-align: center;
+    letter-spacing: 0.1em;
+}
+.box form .inputbox
+{
+    position: relative;
+    width: 300px;
+    margin-top: 35px;
+}
+.box form .inputbox .inp
+{
+    position: relative;
+    width: 100%;
+    padding: 20px 10px 10px;
+    background: transparent;
+    border: none;
+    outline: none;
+    box-shadow: none;
+    color: rgb(255, 255, 255);
+    font-size: 1em;
+    letter-spacing: 0.05em;
+    transition: 0.5s;
+    z-index: 10;
+}
+.box form .inputbox span
+{
+  position: absolute;
+  top: 50px;
+  left: 5px;
+  transform: translateY(-10px);
+  font-size: 1em;
+  color: white;
+  pointer-events: none;
+  transition: .5s;
+}
+.box form .inputbox input:valid~span,
+.box form .inputbox input:focus~span
+{
+ top:-5px;
+}
+.box form .inputbox i
+{
+    position:  absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 2px;
+    background: rgb(255, 255, 255);
+    border-radius: 4px;
+    overflow: hidden;
+    transition: 0.5s;
+    pointer-events: none;
+    margin: 10px;
+
+}
+.bout input
+{
+    color:purple;
+    border: 2px solid rgb(255, 255, 255);
+    border-radius: 10px;
+    margin: 8px;
+    width: 100%;
+    padding: 10px;
+}
+.box .links a
+{
+    color: white;
+    padding: 10px 25px;
+    margin: 4px;
+    text-decoration: none;
+}
+.pic p img
+{
+    width: 100px;
+    margin-bottom: 600px;
+}
